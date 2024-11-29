@@ -1,0 +1,15 @@
+xgboost:
+MAE: 12312.79, MSE: 449677732.90, R2: 0.19
+Model ve label encoders başarıyla kaydedildi.
+
+KNeighborsRegressor: En iyi model çünkü en düşük r^2 değerine sahip.
+MAE: 12468.67, MSE: 454056223.18, R2: 0.18
+Model ve label encoders başarıyla kaydedildi.
+
+LR:
+MAE: 9888.94, MSE: 253329533.92, R2: 0.54
+Model ve label encoders başarıyla kaydedildi.
+
+RandomForestRegressor:
+MAE: 11723.34, MSE: 371883260.04, R2: 0.33
+Model ve label encoders başarıyla kaydedildi.
