@@ -13,7 +13,7 @@ label_encoders = pk.load(open('KNeighborsRegresso_label_encoder.pkl', 'rb'))
 df = pd.read_csv('salary.csv')
 
 # Streamlit ile uygulama başlığını belirtiyoruz
-st.title("Maaş Tahmin Uygulaması")
+st.title("Yazılım Geliştiricileri İçin Maaş Tahmini Uygulaması")
 st.write("Pozisyon, deneyim seviyesi ve çalışma koşullarına göre maaş tahmini yapabilirsiniz.")
 
 # Kullanıcıya sunulacak seçenekleri (benzersiz değerleri) belirlemek için veri setindeki sütunları analiz ediyoruz
@@ -53,5 +53,5 @@ if st.button("Tahmin Et"):
     predicted_salary_f_2024 = model.predict(input_data)[0]*2.06  # Modelin döndürdüğü ilk (ve tek) tahmin sonucu 2024 için 2.06 ile çarpılmıştır. Enflasyon hesaba katıldı.
 
     # Kullanıcıya tahmini maaşı gösteriyoruz
-    st.write(f"2023 Tahmini Maaş: **{predicted_salary_f_2023:,.2f} TL**")  # Maaşı düzgün formatta (ör. 1.000,00 TL) gösteriyoruz
+    st.write(f"2023 Tahmini Maaş: **{predicted_salary_f_2022:,.2f} TL**")  # Maaşı düzgün formatta (ör. 1.000,00 TL) gösteriyoruz
     st.write(f"2024 Tahmini Maaş: **{predicted_salary_f_2024:,.2f} TL**")  # Maaşı düzgün formatta (ör. 1.000,00 TL) gösteriyoruz
