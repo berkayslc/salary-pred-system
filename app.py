@@ -49,7 +49,7 @@ if st.button("Tahmin Et"):
         input_data[col] = label_encoders[col].transform(input_data[col])
 
     # Kullanıcıdan alınan verileri eğitilmiş modele vererek tahmin işlemini gerçekleştiriyoruz
-    predicted_salary_f_2023 = model.predict(input_data)[0] # Modelin döndürdüğü ilk (ve tek) tahmin sonucu 
+    predicted_salary_f_2022 = model.predict(input_data)[0] # Modelin döndürdüğü ilk (ve tek) tahmin sonucu 
     predicted_salary_f_2024 = model.predict(input_data)[0]*2.06  # Modelin döndürdüğü ilk (ve tek) tahmin sonucu 2024 için 2.06 ile çarpılmıştır. Enflasyon hesaba katıldı.
 
     # Kullanıcıya tahmini maaşı gösteriyoruz
