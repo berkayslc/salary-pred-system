@@ -1,5 +1,5 @@
 
-# Maaş Tahmin Uygulaması
+# Yazılım Geliştiricileri İçin Maaş Tahmini Uygulaması 
 
 Bu proje, Python ve Streamlit kullanılarak geliştirilmiş bir maaş tahmin uygulamasıdır. Kullanıcı, pozisyon, deneyim seviyesi, lokasyon, çalışma şekli, çalışan sayısı ve deneyim süresine göre tahmini maaşı öğrenebilir.
 
